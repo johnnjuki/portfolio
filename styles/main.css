@@ -56,6 +56,10 @@ img.next-image {
   margin: 0;
 }
 
+.rounded-full {
+  border-radius: 50%;
+}
+
 .prose a {
   color: #0074de;
 }
