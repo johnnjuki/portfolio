@@ -1,10 +1,12 @@
 ---
-title: Markdown Examples
-date: 2021/3/19
-description: View examples of all possible Markdown options.
+title: Web Development
+date: 2023/12/14
+# description: View examples of all possible Markdown options.
 tag: web development
-author: You
+author: John Njuki
 ---
+
+<!--
 
 # Markdown Examples
 
@@ -96,4 +98,14 @@ export default function Nextra({ Component, pageProps }) {
 
 and multiple paragraphs.
 
-[^2]: Footnote text.
+[^2]: Footnote text. -->
+
+<!-- ---
+title: Markdown Examples
+date: 2021/3/19
+description: View examples of all possible Markdown options.
+tag: web development
+author: You
+--- -->
+
+Coming Soon...

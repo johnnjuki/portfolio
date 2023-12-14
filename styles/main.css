@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Inter var';
   font-style: normal;
@@ -54,10 +58,6 @@ details summary {
 
 img.next-image {
   margin: 0;
-}
-
-.rounded-full {
-  border-radius: 50%;
 }
 
 .prose a {
