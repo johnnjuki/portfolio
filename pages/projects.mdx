@@ -6,28 +6,189 @@ date: 2023-12-14
 
 # Projects
 
-Adding...
+{/* Here's some of my photography. */}
 
-{/* Here's some of my photography.
+import Image from "next/image";
 
-import Image from 'next/image'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
+import "swiper/css";
 
-<Image
-  src="/images/photo2.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/WeYamle9fDM)
+[PodPlay](https://github.com/johnnjuki/PodPlay) ↗
 
-<Image
-  src="/images/photo.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/ndN00KmbJ1c) */}
+Search, subscribe and listen to audio and video podcasts.
+
+<Swiper
+  grabCursor={true}
+  slidesPerView={"auto"}
+  spaceBetween={32}
+  freeMode
+  modules={[FreeMode]}
+>
+  <SwiperSlide style={{ width: "auto" }}>
+    <Image
+      src="/images/android/podplay/home.jpeg"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+  <SwiperSlide>
+    <Image
+      src="/images/android/podplay/player.jpeg"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+</Swiper>
+
+---
+
+[Reading Radar](https://github.com/johnnjuki/Reading-Radar) ↗
+
+Android application that provides users with an up-to-date ranking of the most popular books in various categories.
+
+<Swiper
+  grabCursor={true}
+  slidesPerView={"auto"}
+  spaceBetween={32}
+  freeMode
+  modules={[FreeMode]}
+>
+  <SwiperSlide style={{ width: "auto" }}>
+    <Image
+      src="/images/android/reading-radar/home.jpg"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+  <SwiperSlide>
+    <Image
+      src="/images/android/reading-radar/details.jpg"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+</Swiper>
+
+---
+
+[JetReddit](https://github.com/johnnjuki/JetReddit) ↗
+
+A different style composable version of the Reddit app.
+
+<Swiper
+  grabCursor={true}
+  slidesPerView={"auto"}
+  spaceBetween={32}
+  freeMode
+  modules={[FreeMode]}
+>
+  <SwiperSlide style={{ width: "auto" }}>
+    <Image
+      src="https://user-images.githubusercontent.com/84154246/189487872-96d76755-cd8b-47eb-8370-09f7b4ea7858.png"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+</Swiper>
+
+---
+
+[JetNotes](https://github.com/johnnjuki/JetNotes) ↗
+
+An android app for managing notes.
+
+<Swiper
+  grabCursor={true}
+  slidesPerView={"auto"}
+  spaceBetween={32}
+  freeMode
+  modules={[FreeMode]}
+>
+  <SwiperSlide style={{ width: "auto" }}>
+    <Image
+      src="https://user-images.githubusercontent.com/84154246/228158351-1ecc4868-1f02-44d6-ab27-120c3a6f5fb7.png"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+  <SwiperSlide style={{ width: "auto" }}>
+    <Image
+      src="https://user-images.githubusercontent.com/84154246/228158560-313456c7-4ae6-4851-b344-8aa7c0f12ca7.png"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+</Swiper>
+
+---
+
+[Compose Basics](https://github.com/johnnjuki/Compose-Basics) ↗
+
+A collection of Jetpack Compose applications. \
+Built the apps when learning native Android development with Jetpack Compose.
+
+---
+
+[Fooderlich](https://github.com/johnnjuki/Fooderlich-flta) ↗
+
+A social recipe Fluter app. \
+Users can keep track of new dishes, and share with friends.
+
+---
+
+[Recipe App](https://github.com/johnnjuki/recipe-flta) ↗
+
+A Flutter application that loads recipes from [Edamam Recipe API](https://developer.edamam.com/). \
+Users can search for recipes, view recipe details, and save recipes to their favorites.
+
+<Swiper
+  grabCursor={true}
+  slidesPerView={"auto"}
+  spaceBetween={32}
+  freeMode
+  modules={[FreeMode]}
+>
+  <SwiperSlide style={{ width: 'auto'}}>
+    <Image
+      src="/images/android/recipe/recipe_steak_search.png"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+  <SwiperSlide style={{ width: 'auto'}}>
+    <Image
+      src="/images/android/recipe/steak_verde_details.png"
+      alt="Photo"
+      width={270}
+      height={570}
+      priority
+      className="next-image"
+    />
+  </SwiperSlide>
+
+</Swiper>

@@ -6,7 +6,9 @@ const withNextra = require('nextra')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // any configs you need
+  images: {
+    domains: ['user-images.githubusercontent.com'],
+  }
 }
 
 module.exports = withNextra(nextConfig)
