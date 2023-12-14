@@ -7,6 +7,9 @@ module.exports = {
     'theme.config.js',
   ],
   theme: {
+    colors: {
+      hover: '#ffffff26'
+    },
     extend: {},
   },
   plugins: [],
