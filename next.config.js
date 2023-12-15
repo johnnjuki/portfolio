@@ -7,7 +7,11 @@ const withNextra = require('nextra')({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['user-images.githubusercontent.com'],
+    remotePatterns: [
+      {
+        hostname: "user-images.githubusercontent.com",
+      },
+    ]
   }
 }
 
