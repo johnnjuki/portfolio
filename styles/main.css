@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Inter var';
+  font-family: "Inter var";
   font-style: normal;
   font-weight: 100 900;
   font-display: block;
-  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+  src: url(/fonts/Inter-roman.latin.var.woff2) format("woff2");
 }
 @font-face {
-  font-family: 'Inter var';
+  font-family: "Inter var";
   font-style: italic;
   font-weight: 100 900;
   font-display: block;
-  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
-  font-named-instance: 'Italic';
+  src: url(/fonts/Inter-italic.latin.var.woff2) format("woff2");
+  font-named-instance: "Italic";
 }
 
 body {
-  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Inter var", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   -webkit-font-smoothing: subpixel-antialiased;
-  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
-    'cv03' 1, 'cv04' 1;
-  font-variation-settings: 'wght' 450;
+  font-feature-settings: "case" 1, "cpsp" 1, "dlig" 1, "cv01" 1, "cv02",
+    "cv03" 1, "cv04" 1;
+  font-variation-settings: "wght" 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
 }
@@ -35,13 +35,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-variation-settings: 'wght' 650;
+  font-variation-settings: "wght" 650;
 }
 h1 {
-  font-variation-settings: 'wght' 850;
+  font-variation-settings: "wght" 850;
 }
 h2 {
-  font-variation-settings: 'wght' 750;
+  font-variation-settings: "wght" 750;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -66,4 +66,40 @@ img.next-image {
 
 .nav-line .nav-link {
   color: #69778c;
+}
+
+.fancy-border-gradient::before {
+  inset: 0;
+  content: "";
+  --angle: 0deg;
+  position: absolute;
+  border-radius: inherit;
+  padding: 1.5px; /* control the border thickness */
+  background: conic-gradient(
+    from var(--angle),
+    #3178c622,
+    #3178c644 35%,
+    #3178c688 39%,
+    #3178c6,
+    #3178c688 61%,
+    #3178c644 65%,
+    #3178c622
+  );
+  -webkit-mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  animation: 3s rotate linear infinite;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
