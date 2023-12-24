@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: "John's Portfolio",
     description: "I'm a full-stack developer and I specialize in building web apps.",
-    image: "https://drive.google.com/file/d/1nGVto5BGxE8fE6byHhv0UNGbQtd1o5ym/view?usp=sharing",
+    image: "https://drive.google.com/file/d/1nGVto5BGxE8fE6byHhv0UNGbQtd1o5ym",
   }
 
   return (
