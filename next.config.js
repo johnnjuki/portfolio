@@ -11,6 +11,9 @@ const nextConfig = {
       {
         hostname: "user-images.githubusercontent.com",
       },
+      {
+        hostname: "drive.google.com",
+      }
     ]
   }
 }
